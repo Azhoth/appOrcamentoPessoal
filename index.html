@@ -55,12 +55,12 @@
         <div class="col-md-2">
           <select class="form-control" id="ano">
             <option value="">Ano</option>
-            <option value="2018">2018</option>
+            <option value="2020">2020</option>
           </select>
         </div>
 
         <div class="col-md-2">
-          <select class="form-control" id="mes">
+          <select class="form-control" id="mes" focusout="verificaMes()">
             <option value="">Mês</option>
             <option value="1">Janeiro</option>
             <option value="2">Fevereiro</option>
@@ -78,7 +78,7 @@
         </div>
         
         <div class="col-md-2">
-          <input type="text" class="form-control" placeholder="Dia" id="dia" />
+          <input type="text" class="form-control" placeholder="Dia" id="dia" focusout="verificaDia()" />
         </div>
 
         <div class="col-md-6">
@@ -89,6 +89,7 @@
             <option value="3">Lazer</option>
             <option value="4">Saúde</option>
             <option value="5">Transporte</option>
+            <option value="6">Outro</option>
           </select>
         </div>
       </div>
